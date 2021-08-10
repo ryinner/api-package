@@ -1,4 +1,5 @@
 {
+    "type": "package",
     "name": "ryinner/api-package",
     "description": "Api-provider",
     "version": "1.0.0",
