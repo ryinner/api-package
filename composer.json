@@ -1,0 +1,19 @@
+{
+    "name": "ryinner/api-package",
+    "description": "Api-provider",
+    "autoload": {
+        "psr-4": {
+            "ApiPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ryinner",
+            "email": "ryinner@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    }
+}
