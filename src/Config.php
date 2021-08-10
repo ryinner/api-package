@@ -4,6 +4,5 @@ namespace ApiPackage;
 
 class Config
 {
-    public $baseUri;
-    
+    public $baseUri = "http://api.local/";
 }
