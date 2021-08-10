@@ -1,6 +1,7 @@
 {
     "name": "ryinner/api-package",
     "description": "Api-provider",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "ApiPackage\\": "src/"
