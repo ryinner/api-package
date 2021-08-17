@@ -2,10 +2,20 @@
 
 namespace ApiPackage;
 
-use ApiPackage\Config;
-
 class ApiController
 {
+    /**
+     * Your url adress
+     *
+     * @var string uri
+     */
+    public $uri;
+
+    public function __construct(string $uri)
+    {
+        $this->uri = $uri;
+    }
+
     /**
      * Connection to Api
      *
@@ -30,8 +40,7 @@ class ApiController
      */
     public function get(string $prefix = null)
     {
-        $config = new Config;
-        $url = $config->baseUri;
+        $url = $this->uri;
         if ($prefix !== null) {
             $url .= $prefix;
         }
@@ -48,8 +57,7 @@ class ApiController
      */
     public function getThis(string $prefix = null, int $id)
     {
-        $config = new Config;
-        $url = $config->baseUri;
+        $url = $this->uri;
         if ($prefix !== null) {
             $url.=$prefix.'/';
         }
